@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 400" role="img" aria-label="Rose petals arranged as S, a heart, and K">
+  <defs>
+    <pattern id="petals" width="30" height="28" patternUnits="userSpaceOnUse" patternTransform="rotate(8)">
+      <rect width="30" height="28" fill="#a9082d"/>
+      <path d="M3 16C4 7 11 2 17 4c4 2 7 8 4 14-4 7-11 8-18-2Z" fill="#d9234c"/>
+      <path d="M17 27c-3-7 0-14 6-16 5-1 10 3 10 9-1 7-7 11-16 7Z" fill="#c3133d"/>
+      <path d="M6 13c2-4 5-6 8-7" fill="none" stroke="#ffb5c3" stroke-opacity=".38" stroke-width="1.5" stroke-linecap="round"/>
+      <circle cx="23" cy="21" r="1.2" fill="#ffb5c3" fill-opacity=".45"/>
+    </pattern>
+    <clipPath id="initials">
+      <text x="25" y="319" font-family="Georgia,serif" font-size="286" font-weight="700" letter-spacing="-15">S</text>
+      <text x="471" y="319" font-family="Georgia,serif" font-size="286" font-weight="700" letter-spacing="-15">K</text>
+    </clipPath>
+    <clipPath id="heart">
+      <path d="M360 295c-14-12-75-58-75-101 0-40 50-54 75-16 25-38 75-24 75 16 0 43-61 89-75 101Z"/>
+    </clipPath>
+    <filter id="shadow" x="-15%" y="-15%" width="130%" height="140%">
+      <feDropShadow dx="0" dy="7" stdDeviation="7" flood-color="#4a1822" flood-opacity=".24"/>
+    </filter>
+  </defs>
+  <rect width="720" height="400" fill="#fffdf9"/>
+  <rect width="720" height="400" fill="#d2bdac" opacity=".08"/>
+  <g filter="url(#shadow)">
+    <rect x="14" y="15" width="692" height="370" fill="url(#petals)" clip-path="url(#initials)"/>
+    <rect x="14" y="15" width="692" height="370" fill="url(#petals)" clip-path="url(#heart)"/>
+  </g>
+  <path d="M360 286c-18-15-65-53-65-91 0-27 33-38 65 1 32-39 65-28 65-1 0 38-47 76-65 91Z" fill="none" stroke="#fff0e8" stroke-opacity=".34" stroke-width="2"/>
+</svg>
